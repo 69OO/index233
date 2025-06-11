@@ -2,68 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LEAN Menu</title>
+    <title>ALX LEAN Menu - FiveM</title>
     <meta name="viewport" content="width=370, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="mod-menu-container" id="mainMenu">
+    <div class="background-effects">
+        <div class="grid-overlay"></div>
+        <div class="particles"></div>
+    </div>
+    
+    <div class="mod-menu-container" id="mainMenu">
         <div class="mod-menu-header">
+            <div class="header-glow"></div>
             <img src="https://i.ibb.co/7Jpp3LDH/Chat-GPT-Image-7-2025-07-07-25.png" alt="Menu Banner" class="header-banner">
+            <div class="header-overlay"></div>
             <div class="header-title-bar">
+                <div class="title-glow"></div>
                 <span class="header-title">A L X</span>
-                <span class="header-subtitle">MENU</span>
+                <span class="header-subtitle">LEAN MENU</span>
+                <div class="version-badge">BETA v2.1</div>
             </div>
-            <div class="header-current-tab">HOME</div>
+            <div class="header-current-tab">
+                <i class="fas fa-home"></i>
+                <span>HOME</span>
+            </div>
+            <div class="status-indicators">
+                <div class="status-dot online"></div>
+                <span class="status-text">ONLINE</span>
+            </div>
         </div>
+        
         <div class="mod-menu-body">
-            <ul class="mod-menu-tabs">
-                <li><button class="tab-btn active" data-tab="self" tabindex="0"><i class="fas fa-user"></i> Self <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="online" tabindex="0"><i class="fas fa-users"></i> Online <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="combat" tabindex="0"><i class="fas fa-crosshairs"></i> Combat/Weapons <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="visual" tabindex="0"><i class="fas fa-eye"></i> Visual <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="vehicle" tabindex="0"><i class="fas fa-car"></i> Vehicle <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="misc" tabindex="0"><i class="fas fa-folder-open"></i> Miscellaneous <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="destructive" tabindex="0"><i class="fas fa-bomb"></i> Destructive <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="triggers" tabindex="0"><i class="fas fa-bolt"></i> Triggers <span class="arrow">»</span></button></li>
-                <li><button class="tab-btn" data-tab="settings" tabindex="0"><i class="fas fa-cog"></i> Settings <span class="arrow">»</span></button></li>
-            </ul>
+            <div class="tabs-container">
+                <ul class="mod-menu-tabs">
+                    <li><button class="tab-btn active" data-tab="self" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-user"></i></div>
+                        <span class="tab-text">Self</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="online" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-users"></i></div>
+                        <span class="tab-text">Online</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="combat" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-crosshairs"></i></div>
+                        <span class="tab-text">Combat/Weapons</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="visual" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-eye"></i></div>
+                        <span class="tab-text">Visual</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="vehicle" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-car"></i></div>
+                        <span class="tab-text">Vehicle</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="misc" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-folder-open"></i></div>
+                        <span class="tab-text">Miscellaneous</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="destructive" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-bomb"></i></div>
+                        <span class="tab-text">Destructive</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="triggers" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-bolt"></i></div>
+                        <span class="tab-text">Triggers</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                    <li><button class="tab-btn" data-tab="settings" tabindex="0">
+                        <div class="tab-icon"><i class="fas fa-cog"></i></div>
+                        <span class="tab-text">Settings</span>
+                        <div class="tab-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="tab-glow"></div>
+                    </button></li>
+                </ul>
+            </div>
+            
             <div class="mod-menu-content">
                 <div class="tab-content active" id="self-tab">
-                    <div class="menu-section"><h2>Self Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-user"></i> Self Options</h2>
+                        <p class="section-desc">Manage your character settings and abilities</p>
+                        <div class="options-preview">
+                            <div class="option-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>God Mode</span>
+                            </div>
+                            <div class="option-card">
+                                <i class="fas fa-eye-slash"></i>
+                                <span>Invisible</span>
+                            </div>
+                            <div class="option-card">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>Super Jump</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="online-tab">
-                    <div class="menu-section"><h2>Online Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-users"></i> Online Options</h2>
+                        <p class="section-desc">Interact with other players online</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="combat-tab">
-                    <div class="menu-section"><h2>Combat/Weapons Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-crosshairs"></i> Combat/Weapons Options</h2>
+                        <p class="section-desc">Enhance your combat capabilities</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="visual-tab">
-                    <div class="menu-section"><h2>Visual Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-eye"></i> Visual Options</h2>
+                        <p class="section-desc">Customize visual effects and overlays</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="vehicle-tab">
-                    <div class="menu-section"><h2>Vehicle Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-car"></i> Vehicle Options</h2>
+                        <p class="section-desc">Modify vehicle properties and behavior</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="misc-tab">
-                    <div class="menu-section"><h2>Miscellaneous Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-folder-open"></i> Miscellaneous Options</h2>
+                        <p class="section-desc">Additional utility functions</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="destructive-tab">
-                    <div class="menu-section"><h2>Destructive Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-bomb"></i> Destructive Options</h2>
+                        <p class="section-desc">High-impact modifications</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="triggers-tab">
-                    <div class="menu-section"><h2>Triggers Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-bolt"></i> Triggers Options</h2>
+                        <p class="section-desc">Event triggers and automation</p>
+                    </div>
                 </div>
                 <div class="tab-content" id="settings-tab">
-                    <div class="menu-section"><h2>Settings Options</h2><p>...</p></div>
+                    <div class="menu-section">
+                        <h2><i class="fas fa-cog"></i> Settings Options</h2>
+                        <p class="section-desc">Configure menu preferences</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="mod-menu-footer">
-            <div class="version-info">Version: Beta | 24hrs ago (pls report bugs)</div>
-            <div class="page-counter">1/9</div>
+            <div class="footer-left">
+                <div class="version-info">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Version: Beta v2.1</span>
+                </div>
+                <div class="update-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Updated 24hrs ago</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="page-counter">
+                    <i class="fas fa-list"></i>
+                    <span>1/9</span>
+                </div>
+                <div class="keybind-hint">
+                    <i class="fas fa-keyboard"></i>
+                    <span>→ Enter</span>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <div class="menu-toggle-btn" id="toggleMenuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
